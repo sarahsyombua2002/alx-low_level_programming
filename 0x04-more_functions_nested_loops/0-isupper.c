@@ -1,7 +1,7 @@
 #include <unistd.h>
 
 /**
- * _putchar - checks for upercase character
+ * _isupper - checks for upercase character
  * @c: The character to print
  *
  * Return: On success 1 otherwise 0
