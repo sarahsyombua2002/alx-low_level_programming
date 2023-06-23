@@ -1,24 +1,30 @@
 #include <unistd.h>
+#include <stdio.h>
 
 /**
- * print_number - writes an integer
- * @i: unsigned integer
- * @n :The number of integer
- * Return: On success .
+ * print_number - prints an integer
+ * @n: prints an integer
+ *
+ * Return: On success 1.
  * On error, -1 is returned, and errno is set appropriately.
  */
 void print_number(int n)
 {
-	unsigned int i = n;
+	unsigned int n1;
 
 	if (n < 0)
 	{
-		putchar(45);
-		(--i);
-	}
-	if (i / 10)
+		n1 = -n;
+		putchar('-');
+	} else
 	{
-		print_number(i / 10);
+		n1 = n;
 	}
-		putchar(i % 10 + '0');
+
+	if (n1 / 10)
+	{
+		print_number(n1 / 10);
+	}
+
+	putchar((n1 % 10) + '0');
 }
