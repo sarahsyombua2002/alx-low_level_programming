@@ -1,4 +1,5 @@
 #include <unistd.h>
+#include <stdio.h>
 #include "main.h"
 
 /**
@@ -7,21 +8,25 @@
  */
 void print_number(int n)
 {
-	unsigned int n1;
-
+	
 	if (n < 0)
 	{
-		n1 = -n;
-		_putchar('-');
+		putchar('-');
 	} else
 	{
-		n1 = n;
+		n = -n;
 	}
 
-	if (n1 / 10)
+	if (n / 10)
 	{
-		print_number(n1 / 10);
+		print_number(n / 10);
 	}
 
-	_putchar((n1 % 10) + '0');
+	putchar((n % 10) + '0');
+	int main(void)
+	{
+		print-number(98);
+		putchar('\n);
+		return (0);
+	}	
 }
