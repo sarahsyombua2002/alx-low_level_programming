@@ -2,12 +2,12 @@
 #include <stdio.h>
 
 /**
- * Main -alphabets in lowercase
+ * print_alphabet -alphabets in lowercase
  * Description: This program prints the alphabet in lowercase
  * Return: Always (0) success
  */
 
-int main(void)
+int print_alphabet(void)
 {
 	char c;
 
