@@ -2,9 +2,10 @@
 #include <stdio.h>
 
 /**
- * main - lower alphabet and then uppercase
- * Description: char
- * return: Always (0) success
+ * main - Entry point
+ * Description: lower alphabet and then uppercase
+ *
+ * Return: Always (0) success
  */
 
 int main(void)
