@@ -2,12 +2,13 @@
 #include <stdio.h>
 
 /**
- * main - Entry point
- * Description: lower alphabet and then uppercase
+ * _puts -function that prints a string
+ * @str:
  *
  * Return: Always (0) success
  */
 
-int main(void)
-
-
+void _puts(char *str)
+{
+		puts(str);
+}
