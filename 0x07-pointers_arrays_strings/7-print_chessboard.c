@@ -4,7 +4,7 @@
 /**
  * print_chessboard - function that prints the chessboard
  * @a: pointer
- * @n: number
+ *
  *
  * On error, -1 is returned, and errno is set appropriately.
  */
