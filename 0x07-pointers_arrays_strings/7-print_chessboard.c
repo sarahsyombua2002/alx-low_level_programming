@@ -4,7 +4,7 @@
 /**
  * print_chessboard - function that prints the chessboard
  * @a: pointer
- *
+ * @n: number
  *
  * On error, -1 is returned, and errno is set appropriately.
  */
@@ -16,8 +16,8 @@ void print_chessboard(char (*a)[8])
 	{
 		for (j = 0; j < 8; j++)
 		{
-		printf("%c ", a[i][j]);
+		putchar(a[i][j]);
 		}
-		printf("\n");
+		putchar('\n');
 	}
 }
