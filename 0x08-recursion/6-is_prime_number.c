@@ -2,38 +2,36 @@
 #include <unistd.h>
 #include <stdio.h>
 
-int _sqrt_helper(int n, int i);
-int _sqrt_recursion(int n);
+int check_prime(int n, int i);
 
 /**
- * _sqrt_helper - a helper function 
- * @y: the number we are testing
- * @n: the square we want to find
- * Return: On success 1.
- * On error, -1 is returned, and errno is set appropriately.
- */
-
-/**
- *  _sqrt_recursion -  function that returns the natural square root of a number.
- * @n: parameter of function
- *
- * Return: On success 1.
- * On error, -1 is returned, and errno is set appropriately.
- */
-int _sqrt_helper(int n, int i);
-
-int _sqrt_recursion(int n)
+  * is_prime_number - Returns if a number is prime
+  * @n: the number to be checked
+  *
+  * Return: integer value
+  */
+int is_prime_number(int n)
 {
-        if (n < 0)
-                return (-1);
-        return (_sqrt_helper(0, n));
+	return (check_prime(n, 1));
 }
 
-int _sqrt_helper(int y, int n)
+/**
+  * check_prime - Check if number is prime
+  * @n: the number to be checked
+  * @i: the iteration times
+  *
+  * Return: 1 for prime or 0 composite
+  */
+int check_prime(int n, int i)
 {
-	if (y * y == n)
-		return (x);
-	if (y * y > n)
-	return (-1);
-	return (_sqrt_helper(y + 1, n));
+	if (n <= 1)
+		return (0);
+
+	if (n % i == 0 && i > 1)
+		return (0);
+
+	if ((n / i) < i)
+		return (1);
+
+	return (check_prime(n, i + 1));
 }
