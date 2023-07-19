@@ -5,7 +5,6 @@
  * print_name - function that prints a name
  * @name: the name
  * @f:pointer
- * 
  *
  * Return: nothing
  */
