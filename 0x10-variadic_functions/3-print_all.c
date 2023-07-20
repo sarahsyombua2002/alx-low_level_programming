@@ -20,7 +20,7 @@ void print_all(const char * const format, ...)
 		{ "f", print_a_float },
 		{ "s", print_a_char_ptr }
 	};
-	
+
 	unsigned int i = 0;
 	unsigned int j = 0;
 	char *separator = "";
