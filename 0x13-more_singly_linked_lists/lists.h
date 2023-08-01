@@ -18,6 +18,14 @@ typedef struct listint_s
 	struct listint_s *next;
 } listint_t;
 
+/**
+ * struct listp_s - singly linked list
+ * @p: pointer
+ * @next: points to the next node
+ *
+ * Description: singly linked list node structure
+ *
+ */
 typedef struct listp_s
 {
 	void *p;
