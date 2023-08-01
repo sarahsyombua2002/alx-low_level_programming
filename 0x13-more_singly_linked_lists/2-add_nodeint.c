@@ -5,7 +5,7 @@
  * @head: head of a list.
  * @n: new element
  *
- * Return: address of the new element. 
+ * Return: address of the new element
  * NUll if it failed.
  */
 
