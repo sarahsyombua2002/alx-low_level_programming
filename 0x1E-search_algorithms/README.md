@@ -1,6 +1,5 @@
 Search Algorithms
 This project contains tasks for learning about search algorithms using C.
-
 Tasks To Complete
  0. Linear search
 0-linear.c contains a function that searches for a value in an array of integers using the Linear search algorithm.
